@@ -1,0 +1,30 @@
+1£¬Í¨¹ýShared User id,ÓµÓÐÍ¬Ò»¸öUser idµÄ¶à¸öAPK¿ÉÒÔÅäÖÃ³ÉÔËÐÐÔÚÍ¬Ò»¸ö½ø³ÌÖÐ¡£
+	ÄÇÃ´°Ñ³ÌÐòµÄUIDÅä³Éandroid.uid.system£¬Ò²¾ÍÊÇÒªÈÃ³ÌÐòÔËÐÐÔÚÏµÍ³½ø³ÌÖÐ£¬ÕâÑù¾ÍÓÐÈ¨ÏÞÀ´ÐÞ¸ÄÏµÍ³Ê±¼äÁË¡£
+
+
+2£¬°²×°APKÎÞ·¨°²×°£¬ÊÇÒòÎªÇ©Ãû²»·û£¬³ÌÐòÏëÒªÔËÐÐÔÚÏµÍ³½ø³ÌÖÐ»¹ÒªÓÐÄ¿±êÏµÍ³µÄplatform. key£¬ÓÃÕâ¸ökeyÇ©Ãûºóapk²ÅÕæÕý¿ÉÒÔ·ÅÈëÏµÍ³½ø³ÌÖÐ¡£
+	µÚÒ»¸ö·½·¨ÖÐ¼ÓÈëLOCAL_CERTIFICATE := platformÆäÊµ¾ÍÊÇÓÃÕâÁ½¸ökeyÀ´Ç©Ãû¡£
+
+3£¬android:sharedUserIdÊôÐÔ²»Ö»¿ÉÒÔ°Ñapk·Åµ½ÏµÍ³½ø³ÌÖÐ£¬Ò²¿ÉÒÔÅäÖÃ¶à¸öAPKÔËÐÐÔÚÒ»¸ö½ø³ÌÖÐ£¬ÕâÑù¿ÉÒÔ¹²ÏíÊý¾Ý
+
+4£¬android:sharedUserLabelÕâ¸öÊôÐÔ¸ø¹²ÏíµÄuserid¶¨ÒåÁËÒ»¸öÓÃ»§¿É¶ÁµÄ±êÇ©¡£Õâ¸ö±êÇ©±ØÐëÓÃ×Ö·û´®×ÊÔ´À´ÉèÖÃ£¬²»ÄÜÊ¹ÓÃÔ­ÉúµÄ×Ö·û´®¡£
+	Õâ¸öÊôÐÔÔÚAPI Level 3ÖÐ±»ÒýÈë£¬Ö»ÓÐÔÚsharedUserIdÊôÐÔ±»ÉèÖÃ£¬Õâ¸öÊôÐÔ²ÅÓÐÒâÒå
+
+
+×Ü½á£º1£¬sharedUserIdÊôÐÔ¿ÉÒÔ°ÉÓ¦ÓÃ·ÅÔÚÏµÍ³½ø³ÌÖÐ
+		2£¬ÓµÓÐÍ¬Ò»¸öUser idµÄ¶à¸öAPK¿ÉÒÔÅäÖÃ³ÉÔËÐÐÔÚÍ¬Ò»¸ö½ø³ÌÖÐ.ËùÒÔÄ¬ÈÏ¾ÍÊÇ¿ÉÒÔ»¥Ïà·ÃÎÊÈÎÒâÊý¾Ý
+		3£¬·ÀÖ¹Ó°ÏìÆäËûÓ¦ÓÃ³ÌÐò£¨»òÕßÆäËûÓ¦ÓÃ³ÌÐòÓ°ÏìËü£©
+		
+			
+http://blog.csdn.net/jingwen3699/article/details/8024900
+http://blog.csdn.net/hmg25/article/details/6447067
+
+
+Ç©Ãû¶Ôapp µÄÓ°Ïì£º
+    1.androidÏµÍ³ÔÊÐí¾ßÓÐÏàÍ¬Ç©ÃûµÄAppÔËÐÐÔÚÍ¬Ò»¸ö½ø³ÌÖÐ£¬Èç¹ûÔËÐÐÔÚÍ¬Ò»¸ö½ø³ÌÖÐ£¬ÔòËûÃÇÏàµ±ÓÚÍ¬Ò»¸öApp£¬µ«ÊÇÄã¿ÉÒÔµ¥¶À¶ÔËûÃÇÉý¼¶¸üÐÂ£¬ÕâÊÇÒ»ÖÖApp¼¶±ðµÄÄ£¿é»¯Ë¼Â·¡£
+	2.ÔÊÐí´úÂëºÍÊý¾Ý¹²Ïí¡£androidÖÐÌá¹©ÁËÒ»¸ö»ùÓÚÇ©ÃûµÄPermission±êÇ©¡£Í¨¹ýÔÊÐíµÄÉèÖÃ£¬ÎÒÃÇ¿ÉÒÔÊµÏÖ¶Ô²»Í¬AppÖ®¼äµÄ·ÃÎÊºÍ¹²Ïí£¬ÈçÏÂ£ºAndroidManifest.xml£º<permissionandroid:protectionLevel="normal"/>
+ÆäÖÐprotectionLevel±êÇ©ÓÐ4ÖÖÖµ£ºnormal(È±Ê¡Öµ),dangerous, signature,signatureOrSystem¡£¼òµ¥À´Ëµ£¬normalÊÇµÍ·çÏÕµÄ£¬ËùÓÐµÄApp²»ÄÜ·ÃÎÊºÍ¹²Ïí´ËApp¡£dangerousÊÇ¸ß·çÏÕµÄ£¬ËùÓÐµÄApp¶¼ÄÜ·ÃÎÊºÍ¹²Ïí´ËApp¡£signatureÊÇÖ¸¾ßÓÐÏàÍ¬Ç©ÃûµÄApp¿ÉÒÔ·ÃÎÊºÍ¹²Ïí´ËApp¡£signatureOrSystemÊÇÖ¸ÏµÍ³imageÖÐAppºÍ¾ßÓÐÏàÍ¬Ç©ÃûµÄApp¿ÉÒÔ·ÃÎÊºÍ¹²Ïí´ËApp£¬¹È¸è½¨Òé²»ÒªÊ¹ÓÃÕâ¸öÑ¡Ïî£¬ÒòÎªÇ©Ãû¾Í×ã¹»ÁË£¬Ò»°ãÕâ¸öÐí¿É»á±»ÓÃÔÚÔÚÒ»¸öimageÖÐÐèÒª¹²ÏíÒ»Ð©ÌØ¶¨µÄ¹¦ÄÜµÄÇé¿öÏÂ¡£
+
+
+
+
